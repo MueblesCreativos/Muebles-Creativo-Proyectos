@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos</title>
+    <link rel="stylesheet" href="proyectos.css"/>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="inicio.html">Muebles Creativos Proyectos</a></div>
+            <ul class="links">
+                <li><a href="inicio.html">INICIO</a></li>
+                <li><a href="proyectos.html">PROYECTOS</a></li>
+                <li><a href="espacios.html">ESPACIOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                <li><a href="conocenos.html">CONÓCENOS</a></li>
+            </ul>
+            <a href="#" class="action-btn"><i class="fa-solid fa-circle-user"></i></a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <li><a href="inicio.html">INICIO</a></li>
+            <li><a href="proyectos.html">PROYECTOS</a></li>
+            <li><a href="espacios.html">ESPACIOS</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+            <li><a href="conocenos.html">CONÓCENOS</a></li>
+            <li><a href="#" class="action-btn">Iniciar</a></li>
+        </div>
+
+        <section id="hero">
+            <div class="content-banner">
+                <h2>PROYECTOS</h2>
+                <p>Conoce nuestos proyectos</p>
+                <div class="banner-contents">
+                <a href="contacto.html">COTIZA TU PROYECTO</a>
+                <a href="contacto.html"><i class="fa-solid fa-circle-right"></i></a>
+            </div>
+            </div>
+        </section>
+    </header>
+
+    <footer class="footer">
+        <div class="container container-footer">
+            <div class="menu-footer">
+                <div class="contact-info">
+                    <p class="title-footer">Informacion de contacto</p>
+                    <ul>
+                        <li>
+                            Dirección: Muebles Creativos Perú, Av. Juana de Arco, Puente Piedra 00000
+                        </li>
+                        <li>Teléfono: +51 922 029 825</li>
+                        <li>Gmail: muebles.creativos199@gmail.com</li>
+                    </ul>
+                    <div class="social-icons">
+                        <span class="facebook">
+                            <a href="https://www.facebook.com/mueblescreativosperu" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        </span>
+                        <span class="instagram">
+                            <a href="https://www.instagram.com/muebles_creativos_peru/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </span>
+                        <span class="tiktok">
+                            <a href="https://www.tiktok.com/@muebles.creativos?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                        </span>
+                    </div>
+                </div>
+    
+                <div class="information">
+                    <p class="title-footer">Información</p>
+                    <ul>
+                        <li><a href="#">Acerca de Nosotros</a></li>
+                        <li><a href="#">Políticas de envío</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                        <li><a href="#">Términos de Servicio</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                    </ul>
+                </div>
+    
+                <div class="newsletter">
+                    <p class="title-footer">Boletin Informativo</p>
+                    <div class="content">
+                        <p>
+                            Suscríbete a nuestra página para acceder a nuestros beneficios como asesorías personalizadas.
+                        </p>
+                        <input type="email" placeholder="Ingresa tu correo aquí...">
+                        <button>Suscríbete</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>
+                    Muebles Creativos &copy 2024
+                </p>
+            </div>
+        </div>
+    
+    </footer>
+
+    <script src="https://kit.fontawesome.com/b810564a1d.js" crossorigin="anonymous"></script>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+    
+        toggleBtn.onclick = function(){
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+    
+            toggleBtnIcon.classList = isOpen
+            ?'fa-solid fa-xmark'
+            :'fa-solid fa-bars'
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html{
+    font-size: 63%;
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* utlidades */
+
+body{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.top-coments{
+    width: 100%;
+    height: 100%;
+
+}
+
+.heading{
+    color: #b1b7ba;
+    font-size: 8rem;
+    opacity: 0.3;
+}
+
+.heading-2{
+    margin-left: 10rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    width: 35%;
+}
+
+.heading-3{
+    margin-left: 10rem;
+    font-weight: 600;
+    font-size: 4rem;
+    width: 50%;
+}
+
+.heading-4{
+    margin-left: 10rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+/* container */
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.container1{
+    line-height: 2rem;
+    position: relative;
+    width: 40%;
+}
+
+.card1{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 0;
+    
+
+    background-color: #fff;
+    height: 18rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    
+}
+
+.card1:hover{
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.18);
+    transition: all.3s;
+    background-color: rgb(237, 181, 42);
+}
+
+.card1 span{
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2rem;
+    color: #3e3d3d;
+}
+
+.card1 h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #3e3d3d;
+}
+
+.card1 h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #3e3d3d;
+}
+
+/* container2*/
+
+.container2{
+    line-height: 2rem;
+    position: relative;
+    width: 40%;
+}
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 0;
+
+
+    background-color: #fff;
+    height: 18rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
+.card2:hover{
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.18);
+    transition: all.3s;
+    background-color: rgb(237, 181, 42);
+}
+
+.card2 span{
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2rem;
+    color: #3e3d3d;
+}
+
+.card2 h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #3e3d3d;
+}
+
+.card2 h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #3e3d3d;
+}
+
+/*container 3*/
+
+.container3{
+    line-height: 2rem;
+    position: relative;    
+    width: 40%;
+}
+
+.card3{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 0;
+
+    
+    background-color: #fff;
+    height: 18rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+}
+
+.card3:hover{
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.18);
+    transition: all.3s;
+    background-color: rgb(237, 181, 42);
+}
+
+.card3 span{
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2rem;
+    color: #3e3d3d;
+}
+
+.card3 h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #3e3d3d;
+}
+
+.card3 h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #3e3d3d;
+}
+
+@media(max-width: 1024px){
+    .heading{
+        font-size: 8rem;
+    }
+
+    .heading-4{
+        width: 65%;
+    }
+}
+
+@media(max-width: 818px){
+    html{
+        font-size: 55%;
+    }
+
+    .heading{
+        font-size: 6rem;
+    }
+
+    .heading-2{
+        font-size: 1.8rem;
+    }
+
+    .heading-3{
+        font-size: 3.8rem;
+        width: 70%;
+    }
+
+    .heading-4{
+        font-size: 2rem;
+        width: 85%;
+    }
+
+   .container1,
+   .container2,
+   .container3{
+    width: 40%;
+   }
+
+   .card1,
+   .card2,
+   .card3{
+    height: 25rem;
+    justify-content: center;
+   }
+}
+
+@media(max-width: 730px){
+    .heading-2{
+        margin-left: 1rem;
+    }
+
+    .heading-3{
+        margin-left: 1rem;
+    }
+
+    .heading-4{
+        margin-left: 1rem;
+        width: 97%;
+        font-size: 1.8rem;
+    }
+}
+
+@media(max-width: 540px){
+
+    html{
+        font-size: 49%;
+    }
+
+    .heading{
+        margin:auto;
+        font-size: 5rem;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   .container1,
+   .container2,
+   .container3{
+    width: 85%;
+    line-height: 2rem;
+   }
+
+   .card1,
+   .card2,
+   .card3{
+    height: 16rem;
+   } 
+
+   .card1 span,
+   .card2 span,
+   .card3 span{
+    line-height: 2.5rem;
+    font-size: 1.5rem;
+   }
+
+   .card1 h2,
+   .card2 h2,
+   .card3 h2{
+    font-size: 1.8rem;
+   }
+
+   .card1 h3,
+   .card2 h3,
+   .card3 h3{
+    font-size: 1.5rem;
+   }
+}
+
+@media(max-width: 480px){
+    html{
+        font-size: 48%;
+    }
+
+    .heading{
+        font-size: 4rem;
+    }
+
+   .container1,
+   .container2,
+   .container3{
+    width: 90%;
+    line-height: 2rem;
+   }
+
+   .card1,
+   .card2,
+   .card3{
+    height: 18rem;
+   } 
+}
+
+@media(max-width: 400px){
+
+    .heading{
+        font-size: 3.5rem;
+    }
+
+    .heading-2{
+        width: 55%;
+    }
+
+    .heading-3{
+        width: 90%;
+    }
+
+   .card1,
+   .card2,
+   .card3{
+    height: 50%;
+   }
+}
+
+@media(max-width: 280px){
+    .heading{
+        font-size: 3.2rem;
+    }
+}
