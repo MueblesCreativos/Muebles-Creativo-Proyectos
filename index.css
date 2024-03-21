@@ -756,4 +756,21 @@ section#hero{
     .content p{
         font-size: 1.4rem;
     }
+
+}/* ************************ */
+/*   MEDIA QUERIES-450PX    */
+/* ************************ */
+
+@media(max-width:450px){
+    .slides{
+        width: 100% !important;
+        height: 680px !important;
+    }
+}
+
+@media(max-width:419px){
+    .slides{
+        width: 100% !important;
+        height: 750px !important;
+    }
 }
