@@ -316,6 +316,25 @@ section#hero{
     display: none;
 }
 
+/*sliders*/ 
+
+.sliderhabitacion{
+    width: 100% !important;
+    margin-bottom: -25rem;
+    height: 750px !important;
+}
+
+.sliderjuegos{
+    width: 100% !important;
+    margin-bottom: -25rem;
+    height: 750px !important;
+}
+
+.sliderestudio{
+    width: 100% !important;
+    height: 750px !important;
+}
+
 /* FOOTER */
 
 .footer{
