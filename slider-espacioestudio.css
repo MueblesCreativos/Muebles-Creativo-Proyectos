@@ -17,7 +17,9 @@ body{
 img{
     max-width: 100%;
 }
-
+img:hover{
+    border-radius: 10px;
+}
 /*item 1*/
 
 .item1{
@@ -93,12 +95,3 @@ img{
     width: 100%;
 }
 
-.info-product button{
-    border: none;
-    background: none;
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-}

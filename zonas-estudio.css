@@ -1,25 +1,25 @@
+/*Globales*/
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-:root{
-    --primary-color:#e9d9c5;
-    --background-color:#f9f5f0;
-    --dark-color: #151515;
-}
 
 html{
     font-size: 63%;
     font-family: 'Poppins', sans-serif;
 }
 
+*::after,
+*::before,
 *{
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
-/* **************************** */
-/*         UTILIDADES           */
-/* **************************** */
+/* ********************* */
+/*     UTILIDADES        */
+/* ********************* */
 
 .container{
     max-width: 100rem;
@@ -30,12 +30,8 @@ html{
     text-align: center;
     padding: 5rem;
     font-weight: 500;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
-
-/* **************************** */
-/*          HEADER              */
-/* **************************** */
 
 li{
     list-style: none;
@@ -50,18 +46,8 @@ a{
 /* HEADER */
 
 header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    transition: 0.5s;
-}
-
-header.abajo{
-    background: #5c7fe9;
-    z-index: 10;
+    position: relative;
+    
 }
 
 .navbar{
@@ -73,9 +59,8 @@ header.abajo{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    background-color: #5c7fe9;
 }
-
 
 .navbar .logo a{
     font-size: 2rem;
@@ -109,19 +94,6 @@ header.abajo{
 }
 
 .action-btn:hover{
-    color: #fff;
-}
-
-.zona1{
-    height: 100vh;
-    background-color: #000;
-    background-image: linear-gradient(100deg, #000000, #00000020), url(img/banner-proyectos.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-header.abajo .logo,
-header.abajo ul li a{
     color: #fff;
 }
 
@@ -168,57 +140,7 @@ header.abajo ul li a{
     scale: 0.95;
 }
 
-section#hero{
-    height: calc(100vh - 60px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 
-.content-banner p{
-    color: #c9c9c9;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    font-weight: 400;
-}
-
-.content-banner h2{
-    color: #fff;
-    font-size: 5rem;
-    font-weight:600;
-    line-height: 1.5;
-}
-
-.banner-contents{
-    margin-top: 1.5rem;
-    background-color: #fff;
-    display: inline-block;
-    padding: 1rem 2rem;
-    border-radius: 3rem;
-    
-}
-
-.banner-contents:hover{
-    box-shadow: 0 10px 20px rgba(227, 227, 227, 0.114);
-}
-
-.banner-contents a{
-    text-decoration: none;
-    color: #000;
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-
-.banner-contents i{
-    color: #000;
-    font-size: 1.1rem;
-    cursor: pointer;
-}
-
-.banner-contents i:hover{
-    color: #8c8c8c;
-}
 
 /* ***************** */
 /*      FOOTER       */
@@ -273,7 +195,6 @@ section#hero{
     cursor: pointer;
 }
 
-
 .content input{
     outline: none;
     background: none;
@@ -293,7 +214,7 @@ section#hero{
     display: flex;
     justify-content: center;
     padding-top: 2rem;
-
+   
     border-top: 1px solid #000;
 }
 
@@ -302,102 +223,3 @@ section#hero{
     font-size: 1.6rem;
 }
 
-
-/* ************************ */
-/*   MEDIA QUERIES-992PX    */
-/* ************************ */
-
-
-@media(max-width: 992px){
-
-    .navbar .links,
-    .navbar .action-btn{
-        display: none;
-    }
-
-    .navbar .toggle-btn{
-        display: block;
-    }
-
-    .dropdown-menu{
-        display: block;
-    }
-
-    section#hero{
-        margin: 1rem;
-        align-items: left;
-        justify-content: left;
-        text-align: left;
-    }
-
-}
-
-
-/* ************************ */
-/*   MEDIA QUERIES-768PX    */
-/* ************************ */
-
-
-@media(max-width:768px){
-
-    html{
-        font-size: 55%;
-    }
-
-    .menu-footer{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .copyright{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5rem;
-    }
-
- }   
-
- /* ************************ */
-/*   MEDIA QUERIES-576PX    */
-/* ************************ */
-
-@media(max-width: 576px){
-    .dropdown-menu{
-        left: 2rem;
-        width: unset;
-    }
-
-}
-    
-
-/* ************************ */
-/*   MEDIA QUERIES-468PX    */
-/* ************************ */
-
-@media(max-width:468px){
-    html{
-        font-size: 42.5%;
-    }
-
-    .dropdown-menu.open{
-        height: 200px;
-    }
-
-    .contact-info ul,
-    .information ul,
-    .my-account ul{
-       display: none;
-    }
-
-    .contact-info{
-        align-items: center;
-    }
-
-    .menu-footer{
-        grid-template-columns: 1fr;
-    }
-
-    .content p{
-        font-size: 1.4rem;
-    }
-}
