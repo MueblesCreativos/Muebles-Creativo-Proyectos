@@ -221,6 +221,100 @@ section#hero{
 }
 
 /* ***************** */
+/*      MAIN         */
+/* ***************** */
+
+.main-content{
+    background-color: #ffffff;
+    padding: 1rem 10rem;
+}
+
+.headings h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.headings h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.fases{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    padding: 3rem 15rem;
+}
+
+.fases img{
+    width: 15rem;
+    filter: invert(43%) sepia(86%) saturate(602%) 
+    hue-rotate(193deg) brightness(98%) contrast(86%);
+    transition: all.1s;
+}
+
+.fases img:hover{
+    filter: invert(71%) sepia(66%) 
+    saturate(538%) 
+    hue-rotate(353deg) 
+    brightness(97%) contrast(92%);
+}
+
+.asesoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.asesoriaimg p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.textoasesoria p{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.diseño{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.diseñoimg p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.textodiseño p{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.implementacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.implementacionimg p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.textoimplementacion p{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+/* ***************** */
 /*      FOOTER       */
 /* ***************** */
 .footer{
