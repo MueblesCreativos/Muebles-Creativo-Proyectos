@@ -298,7 +298,7 @@ section#hero{
 
 .slides{
     width: 100% !important;
-    height: 750px !important;
+    height: 80vh !important;
 }
 
 /* ************************** */
@@ -520,7 +520,6 @@ section#hero{
     }
 
     section#hero{
-        margin: 1rem;
         align-items: left;
         justify-content: left;
         text-align: left;

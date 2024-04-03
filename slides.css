@@ -11,7 +11,7 @@ html{
 }
 
 .slides{
-    height: 70vh;
+    height: 80vh;
     width: 60%;
     margin: 1rem 15rem;
     overflow: hidden;
@@ -73,8 +73,8 @@ html{
     line-height: 1.7rem;
     z-index: 1;
     position: relative;
-    margin-top: -40rem;
-    margin-right: 10rem;
+    margin-top: -30rem;
+    margin-right: 1rem;
 
 }
 
@@ -89,7 +89,7 @@ html{
 
     background-color: rgba(255, 255, 255, 0.851);
     z-index: 2;
-    height: 37rem;
+    height: 33rem;
     border-radius: 1rem;
     padding: 2rem 1rem; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.114);
@@ -101,12 +101,12 @@ html{
 }
 
 .card-feature h2{
-    font-weight: 600;
-    font-size: 4rem;
+    font-weight: 400;
+    font-size: 2rem;
 }
 
 .card-feature span{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 100;
     line-height: 2.2rem;
 }
