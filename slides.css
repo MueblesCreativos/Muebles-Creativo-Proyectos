@@ -11,7 +11,7 @@ html{
 }
 
 .slides{
-    height: 80vh;
+    height: 75vh;
     width: 60%;
     margin: 1rem 15rem;
     overflow: hidden;
@@ -70,7 +70,7 @@ html{
 
 .container-features{
     display: flex;
-    line-height: 1.7rem;
+    line-height: 1.4rem;
     z-index: 1;
     position: relative;
     margin-top: -30rem;
@@ -108,7 +108,7 @@ html{
 .card-feature span{
     font-size: 1.2rem;
     font-weight: 100;
-    line-height: 2.2rem;
+    line-height: 2rem;
 }
 
 
@@ -128,7 +128,7 @@ html{
 
 .menu a{
     font-weight: 600;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
 
 @media(max-width:1025px){

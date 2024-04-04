@@ -55,11 +55,8 @@ header{
     display: flex;
     justify-content: space-around;
     transition: 0.5s;
-}
-
-header.abajo{
-    background: #5c7fe9;
     z-index: 10;
+    background: #5c7fe9;
 }
 
 .navbar{
@@ -115,11 +112,6 @@ header.abajo{
     background-image: linear-gradient(100deg, #000000, #00000020), url(img/banner-conocenos.jpg);
     background-size: cover;
     background-position: center;
-}
-
-header.abajo .logo,
-header.abajo ul li a{
-    color: #fff;
 }
 
 /*DROPDOWN MENU*/

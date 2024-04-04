@@ -63,9 +63,6 @@ header{
     display: flex;
     justify-content: space-around;
     transition: 0.5s;
-}
-
-header.abajo{
     background: #5c7fe9;
     z-index: 10;
 }
@@ -125,12 +122,6 @@ header.abajo{
     background-size: cover;
     background-position: center;
 }
-
-header.abajo .logo,
-header.abajo ul li a{
-    color: #fff;
-}
-
 
 /*DROPDOWN MENU*/
 

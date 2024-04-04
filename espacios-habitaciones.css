@@ -115,6 +115,7 @@ header{
     color: #fff;
 }
 
+
 /*DROPDOWN MENU*/
 
 .dropdown-menu{
@@ -157,7 +158,6 @@ header{
 .dropdown-menu .action-btn:active{
     scale: 0.95;
 }
-
 
 /*main*/
 
@@ -250,6 +250,7 @@ header{
     margin: auto;
 }
 
+
 /* FOOTER */
 
 .footer{
@@ -329,104 +330,3 @@ header{
     font-weight: 300;
     font-size: 1.6rem;
 }
-
-
-/* ************************ */
-/*   MEDIA QUERIES-992PX    */
-/* ************************ */
-
-
-@media(max-width: 992px){
-
-    .navbar .links,
-    .navbar .action-btn{
-        display: none;
-    }
-
-    .navbar .toggle-btn{
-        display: block;
-    }
-
-    .dropdown-menu{
-        display: block;
-    }
-
-    section#hero{
-        margin: 1rem;
-        align-items: left;
-        justify-content: left;
-        text-align: left;
-    }
-
-}
-
-
-/* ************************ */
-/*   MEDIA QUERIES-768PX    */
-/* ************************ */
-
-
-@media(max-width:768px){
-
-    html{
-        font-size: 55%;
-    }
-
-    .menu-footer{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .copyright{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 1.5rem;
-    }
-
- }   
-
- /* ************************ */
-/*   MEDIA QUERIES-576PX    */
-/* ************************ */
-
-@media(max-width: 576px){
-    .dropdown-menu{
-        left: 2rem;
-        width: unset;
-    }
-
-}
-    
-
-/* ************************ */
-/*   MEDIA QUERIES-468PX    */
-/* ************************ */
-
-@media(max-width:468px){
-    html{
-        font-size: 42.5%;
-    }
-
-    .dropdown-menu.open{
-        height: 200px;
-    }
-
-    .contact-info ul,
-    .information ul,
-    .my-account ul{
-       display: none;
-    }
-
-    .contact-info{
-        align-items: center;
-    }
-
-    .menu-footer{
-        grid-template-columns: 1fr;
-    }
-
-    .content p{
-        font-size: 1.4rem;
-    }
-}
-
