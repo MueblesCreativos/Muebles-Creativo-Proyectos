@@ -1,0 +1,389 @@
+/*Globales*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+:root{
+    --primary-color:#e9d9c5;
+
+    --dark-color: #151515;
+}
+
+html{
+    font-size: 63%;
+    font-family: 'Poppins', sans-serif;
+}
+
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ********************* */
+/*     UTILIDADES        */
+/* ********************* */
+
+.container{
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.heading-1{
+    text-align: center;
+    padding: 5rem;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+/* ******************** */
+/*         HEADER       */
+/* ******************** */
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #dcdcdc;
+    font-size: 1.5rem;
+}
+
+/* HEADER */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.5s;
+    background: #5c7fe9;
+    z-index: 10;
+}
+
+.navbar{
+    width: 100%;
+    padding: 0 4rem;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+.navbar .logo a{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .links a:hover{
+    color: #fff;
+}
+
+.navbar .toggle-btn{
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action-btn{
+    color: #dcdcdc;
+    padding: 0.5rem 1rem;
+    outline: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+.action-btn:hover{
+    color: #fff;
+}
+
+
+/*DROPDOWN MENU*/
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open{
+    height: 240px;
+}
+
+.dropdown-menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown-menu .action-btn{
+    background-color: rgb(242, 160, 60);
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-menu .action-btn:hover{
+    scale: 1.05;
+}
+
+.dropdown-menu .action-btn:active{
+    scale: 0.95;
+}
+
+/*main*/
+
+.main-content{
+    background-color: #fff;
+    margin-top:5rem;
+}
+
+.container-titulo{
+    padding: 3rem 0;
+    max-width: 100%;
+}
+
+.titulo h1{
+    /*padding: 1rem 0;*/
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color: #85601d;
+}
+
+.menu-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 60px;
+    margin: 0 auto;
+    padding: 0 20rem;
+}
+
+.menu-titulo li{
+    list-style: none;
+}
+
+.menu-titulo a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #85601d;
+}
+
+
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.contenedor figure{
+    position: relative;
+    height: 250px;
+    cursor: pointer;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.contenedor figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+}
+
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(230, 189, 85, 0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.contenedor figure:hover > img{
+    transform: scale(1.3);
+}
+
+.contenedor figure .capa h3{
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px;
+}
+
+.contenedor figure .capa p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+/* ************* */
+/*   PAGINACION  */
+/* ************* */
+
+.paginas{
+    margin: 20px 0;
+}
+
+.paginas ul{
+    list-style: none;
+    text-align: center;
+}
+
+.paginas ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.paginas ul li a{
+    display: block;
+    padding: 10px 20px;
+    color: #000;
+    border-radius: 60%;
+}
+
+.paginas ul li a:hover{
+    color: #fff;
+    background-color: rgb(254, 220, 134);
+}
+
+.paginas ul li .active{
+    background: rgb(254, 220, 134);
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+/* FOOTER */
+
+.footer{
+    background-color: #1f3165;
+}
+
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 3rem;
+}
+
+.social-icons{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.social-icons span{
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons span i{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.facebook{
+    background-color: #3b5998;
+    cursor: pointer;
+}
+.instagram{
+    background: linear-gradient(#f9ce34,  #ee2a7b,  #6228d7);
+    cursor: pointer;
+}
+.tiktok{
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.whatsapp{
+    background-color: #25D366;
+    cursor: pointer;
+}
+
+.content input{
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #000;
+    cursor: pointer;
+    padding: 0.5rem 0 1.2rem;
+    color: var(--dark-color);
+    display: block;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    width: 100%;
+    font-family: inherit;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+   
+    border-top: 1px solid #000;
+}
+
+.copyright p{
+    font-weight: 300;
+    font-size: 1.6rem;
+}
